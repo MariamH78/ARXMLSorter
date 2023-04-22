@@ -45,7 +45,7 @@ public class ARXMLParser {
         this.nodes.push(this.dummyRootNode);
         
         //Preparing document's matcher, which matches anything between < > brackets.
-        this.regexMatcher = Pattern.compile("(?<=<).+?(?=>)").matcher(this.fileText);
+        this.regexMatcher = Pattern.compile("(?<=<).*?(?=>)").matcher(this.fileText);
         this.regexMatcher.find();
         this.XMLDeclaration = regexMatcher.group();
         this.previousMatchEnds = this.regexMatcher.end() + 1;
@@ -65,9 +65,14 @@ public class ARXMLParser {
         //This function extracts the list of parameters of a tag from the returned match between the <> brackets.
         ArrayList<Pair<String,String>> returnedList = new ArrayList<>();
         ArrayList <String> params = new ArrayList<>();
-        Matcher matcher = Pattern.compile("(?<= ).*?(?= |$|/)").matcher(text);
+        Matcher matcher = Pattern.compile("(?<= ).+?(?= |$|/)").matcher(text);
         while(matcher.find()) {
-            params.add(matcher.group()); 
+            params.add(matcher.group());
+            //This handles spaces inside param values when the param value is a string.
+            while (params.get(params.size()-1).replaceAll("[^\"]", "").length() == 1){
+                matcher.find();
+                params.set(params.size()-1, params.get(params.size()-1) + " " + matcher.group());
+            }
         }
         
         for (String param : params){
@@ -99,7 +104,6 @@ public class ARXMLParser {
             
             boolean hasParams = false;
             if(found.contains(" ")) hasParams = true;
-            
             
             if (found.endsWith("/")){           //Self-closing tag
                 

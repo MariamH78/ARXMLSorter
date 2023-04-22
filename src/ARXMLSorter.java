@@ -26,19 +26,13 @@ public class ARXMLSorter {
         /*Include assumptions in the readme (file is structurally correct (all tags are paired (or self-closing)),
         file always starts with xml declaration,
         if text exists outside tags then its location in the document is of no significance,
-        paramvalues have no spaces in them,
         no empty tags exist,
         tags are reasonably named (no tags named '/' for example),
         , only one "short-name" exists per container,
         no comments or multi-line comments in the file.
         /*
         What if container has another container inside of it?
-        
-        
-                Cases to consider:
-        <tag></tag>
-        <tag param=blahblah/>
-        
+        Try running with no args?
         
         */
         
