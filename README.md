@@ -35,3 +35,8 @@ __`jar.exe` is found in `(C:\Program Files\Java\jdkX.X\bin\jar.exe)`.__
 3. If text exists outside tags (tag content) then its location in the document is of no significance.
 4. Only one "short-name" tag exists per container.
 5. No comments or multi-line comments in the file.
+
+
+## Simple -imperfect- UML diagram:
+Note that user defined checked and unchecked exceptions are not included here.
+![image](https://user-images.githubusercontent.com/99722575/233788187-4efa4786-5fbb-4f42-a63b-e36bdf21cbab.png)
