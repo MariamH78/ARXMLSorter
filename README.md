@@ -1,7 +1,7 @@
 # ARXMLSorter
 This repository contains my solution for lab 6 for [CSE231s - Advanced Computer Programming], scripts that sort .arxml files according to the value between the &lt;SHORT-NAME> tags.
 
-Running this package takes a `file_name.arxml` file, and produces a new modified `file_name_mod.arxml` with  re-ordered containers in the same directory.
+Running this package takes a `file_name.arxml` file, and creates a new modified `file_name_mod.arxml` with  re-ordered containers in the same directory.
 
 ## Steps to download this package:
 - Download the repository as a zip file, or git clone from terminal:
@@ -39,4 +39,5 @@ __`jar.exe` is found in `(C:\Program Files\Java\jdkX.X\bin\jar.exe)`.__
 
 ## Simple -imperfect- UML diagram:
 Note that user defined checked and unchecked exceptions are not included here.
-![image](https://user-images.githubusercontent.com/99722575/233788187-4efa4786-5fbb-4f42-a63b-e36bdf21cbab.png)
+![image](https://user-images.githubusercontent.com/99722575/233788363-f5294346-5402-4383-822b-21e32937e868.png)
+
