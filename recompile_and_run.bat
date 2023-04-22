@@ -19,7 +19,7 @@ pause
 echo Running..
 java -jar ARXMLSorter.jar test_files\\test1.arxml test_files\\test2.arxml test_files\\test3.xml test_files\\test4.arxml test_files\\test5.arxml                                 
 
-echo & echo: & echo: & echo To try your own files, run the following line from command terminal: & echo: & echo java -jar "ARXMLSorter.jar" path\\to\\test\\file.arxml another\\file\\here.arxml & echo: & echo There's no cap on number of inputs, and be careful to correctly type the path names. To run files from test_files folder, path and file name should be as follows: test_files\\your_file.arxml (Note the extra slash to escape the actual slash.) & echo: & echo: 
+echo & echo: & echo: & echo To try your own files, run the following line from command terminal: & echo: & echo java -jar ARXMLSorter.jar path\\to\\test\\file.arxml another\\file\\here.arxml & echo: & echo There's no cap on number of inputs, and be careful to correctly type the path names. To run files from test_files folder, path and file name should be as follows: test_files\\your_file.arxml (Note the extra slash to escape the actual slash.) & echo: & echo: 
 
 set /p "choice=Do you want to try again? (y/n): "
 

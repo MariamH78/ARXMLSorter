@@ -25,5 +25,5 @@
 		</CONTAINER>
     </CONTAINER>
 	Testing having random content in-between tags here.
-    <CONTAINER AnotherHelloParam="hello"/>
+    <CONTAINER AnotherHelloParam="Hello there, nice to meet you! "/>
 </AUTOSAR>
