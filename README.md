@@ -28,3 +28,10 @@ __`jar.exe` is found in `(C:\Program Files\Java\jdkX.X\bin\jar.exe)`.__
 3. `test3.xml`: Wrong file extension. Will throw an exception. 
 4. `test4.arxml`: Tests nested containers, empty containers, having multiple params for a tag, spaces in a tag's param, self closing tags, tags having random content in-between other tags. Should run normally. 
 5. `test5.arxml`: A file that doesn't exist. Will throw an exception.
+
+## Assumptions that have to do with input and output files:
+1. File is structurally correct (all tags are paired or self-closing, no empty tag-names, no spaces in tag names, etc.).
+2. File always starts with xml declaration.
+3. If text exists outside tags (tag content) then its location in the document is of no significance.
+4. Only one "short-name" tag exists per container.
+5. No comments or multi-line comments in the file.
