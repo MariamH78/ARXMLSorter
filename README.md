@@ -35,6 +35,7 @@ __`jar.exe` is found in `(C:\Program Files\Java\jdkX.X\bin\jar.exe)`.__
 3. If text exists outside tags (tag content) then its location in the document is of no significance.
 4. Only one "short-name" tag exists per container.
 5. No comments or multi-line comments in the file.
+6. String param values are generally not robust, spaces and specific symbols will not produce the required output, but then the package was mainly build to handle only IDs in the params of a container.
 
 
 ## Simple -imperfect- UML diagram:
